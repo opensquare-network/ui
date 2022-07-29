@@ -1,24 +1,26 @@
 {
   "name": "@osn/common-ui",
   "version": "0.0.101",
-  "main": "es/index.js",
-  "module": "es/index.js",
-  "types": "es/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
   "exports": {
     ".": {
-      "import": "./es/index.js",
-      "types": "./es/index.d.ts"
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
     },
-    "./*": "./*",
+    "./*": "./dist/*",
+    "./es": "./dist/*",
     "./RichEditor": {
-      "import": "./es/RichEditor"
+      "import": "./dist/RichEditor"
     },
     "./Account": {
-      "import": "./es/Account"
+      "import": "./dist/Account"
     }
   },
   "scripts": {
-    "build": "tsup lib",
+    "build": "tsup",
     "test": "vitest run",
     "storybook": "BROWSER=none start-storybook -p 6006",
     "build-storybook": "build-storybook",
