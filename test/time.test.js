@@ -1,5 +1,5 @@
 import { test, expect } from "vitest";
-import { timeDuration } from "./utils";
+import { timeDuration } from "../lib/Time/utils";
 
 test("timeDuration", () => {
   const now = Math.floor(new Date().getTime() / 1000) * 1000;
