@@ -1,35 +1,98 @@
 {
-  "name": "my-ts-lib",
-  "version": "0.0.0",
-  "funding": "https://github.com/sponsors/2nthony",
-  "description": "My awesome typescript library",
-  "repository": "https://github.com/2nthony/my-ts-lib",
-  "author": "2nthony",
-  "license": "MIT",
-  "publishConfig": {
-    "access": "public"
+  "name": "@osn/common-ui",
+  "version": "0.0.101",
+  "main": "dist/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./*": {
+      "import": "./dist/esm/*",
+      "require": "./dist/*"
+    },
+    "./es": {
+      "import": "./dist/esm/index.js",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    },
+    "./es/*": {
+      "import": "./dist/esm/*",
+      "require": "./dist/*"
+    },
+    "./RichEditor": {
+      "import": "./dist/esm/RichEditor",
+      "require": "./dist/RichEditor"
+    },
+    "./Account": {
+      "import": "./dist/esm/Account",
+      "require": "./dist/Account"
+    }
   },
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "storybook": "BROWSER=none start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "prepublishOnly": "npm run test && npm run build"
+  },
+  "author": "osn team",
+  "funding": [
+    "https://github.com/sponsors/2nthony"
+  ],
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "http://www.apache.org/licenses/LICENSE-2.0"
+    }
+  ],
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.mjs",
-  "exports": {
-    "require": "./dist/index.js",
-    "import": "./dist/index.mjs"
+  "dependencies": {
+    "@osn/polkadot-react-identicon": "^1.0.8",
+    "copy-to-clipboard": "^3.3.1",
+    "dayjs": "^1.10.8"
   },
-  "types": "./dist/index.d.ts",
-  "scripts": {
-    "build-fast": "tsup src/index.ts --format cjs,esm",
-    "build": "pnpm run build-fast -- --dts-resolve",
-    "test": "vitest run",
-    "prepublishOnly": "pnpm run build"
+  "peerDependencies": {
+    "@osn/common": "^0.0.13",
+    "@osn/constants": "1.1.0",
+    "@osn/rich-text-editor": "^0.1.52",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.3",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
-    "@2nthony/prettier-config": "1.0.1",
-    "prettier": "2.5.1",
-    "tsup": "6.0.1",
-    "typescript": "4.5.4",
-    "vitest": "0.12.6"
+    "@2nthony/prettier-config": "^1.0.1",
+    "@osn/common": "^0.0.13",
+    "@osn/constants": "1.1.0",
+    "@osn/rich-text-editor": "^0.1.52",
+    "@polkadot/extension-dapp": "^0.44.2",
+    "@polkadot/util-crypto": "^10.1.1",
+    "@storybook/addon-actions": "^6.5.9",
+    "@storybook/addon-essentials": "^6.5.9",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.9",
+    "@storybook/builder-webpack5": "^6.5.9",
+    "@storybook/manager-webpack5": "^6.5.9",
+    "@storybook/react": "^6.5.9",
+    "@storybook/testing-library": "^0.0.13",
+    "react": "^17.0.2",
+    "react-content-loader": "^6.2.0",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.1.3",
+    "styled-components": "^5.3.1",
+    "tsup": "^6.2.0",
+    "typescript": "^4.7.4",
+    "vitest": "^0.19.1"
   }
 }
