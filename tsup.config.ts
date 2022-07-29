@@ -12,4 +12,5 @@ export default defineConfig({
     ".svg": "copy",
   },
   dts: "lib/index.js",
+  external: ["semantic-ui-css", "semantic-ui-react"],
 });
