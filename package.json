@@ -11,14 +11,17 @@
       "types": "./dist/index.d.ts"
     },
     "./*": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "import": "./dist/*",
+      "require": "./dist/*"
     },
     "./es": {
       "import": "./dist/index.mjs",
       "require": "./dist/index.js",
       "types": "./dist/index.d.ts"
+    },
+    "./es/*": {
+      "import": "./dist/*",
+      "require": "./dist/*"
     },
     "./RichEditor": {
       "import": "./dist/RichEditor"
