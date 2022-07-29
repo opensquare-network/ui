@@ -5,6 +5,7 @@ export default defineConfig({
   entry: ["lib"],
   format: ["cjs", "esm"],
   treeshake: true,
+  legacyOutput: true,
   loader: {
     ".js": "jsx",
     ".png": "copy",
