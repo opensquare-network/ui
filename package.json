@@ -46,7 +46,7 @@
     }
   ],
   "files": [
-    "es"
+    "dist"
   ],
   "dependencies": {
     "@osn/polkadot-react-identicon": "^1.0.8",
