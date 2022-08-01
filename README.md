@@ -22,4 +22,4 @@ npm i @osn/common-ui
 
 ## License
 
-MIT &copy; [2nthony](https://github.com/sponsors/2nthony)
+MIT &copy; [osn team](https://github.com/opensquare-network)
