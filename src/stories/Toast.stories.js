@@ -44,6 +44,7 @@ export const primary = () => {
             title: "Pending",
             message: "Waiting for signing and syncing data...",
             type: "pending",
+            timeout: false,
           });
         }}
       >

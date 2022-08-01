@@ -18,11 +18,11 @@ export type ToastItemProps = Omit<ToastOptions, "appendTo"> & {
   destroy?(seed?: number): void;
 };
 
-export type ToastCreateOption = ToastOptions & {
+export type ToastCreateOptions = ToastOptions & {
   seed: number;
 };
 
-export type ToastCreate = (options: ToastCreateOption) => DestroyCallback;
+export type ToastCreate = (options: ToastCreateOptions) => DestroyCallback;
 
 export type DestroyCallback = () => void;
 
