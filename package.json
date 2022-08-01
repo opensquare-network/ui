@@ -44,10 +44,7 @@
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run test && npm run build"
   },
-  "author": "osn team",
-  "funding": [
-    "https://github.com/sponsors/2nthony"
-  ],
+  "author": "OpenSquare <https://www.opensquare.network/>",
   "license": "Apache-2.0",
   "licenses": [
     {
