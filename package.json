@@ -31,6 +31,10 @@
     "./Account": {
       "import": "./dist/esm/Account",
       "require": "./dist/Account"
+    },
+    "./reset.css": {
+      "import": "./dist/esm/styles/reset.css",
+      "require": "./dist/styles/reset.css"
     }
   },
   "scripts": {
@@ -62,7 +66,9 @@
   "peerDependencies": {
     "@osn/common": "^0.0.13",
     "@osn/constants": "1.1.0",
+    "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
+    "bignumber.js": "^9.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "semantic-ui-css": "^2.4.1",
@@ -73,7 +79,9 @@
     "@2nthony/prettier-config": "^1.0.1",
     "@osn/common": "^0.0.13",
     "@osn/constants": "1.1.0",
+    "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
+    "@polkadot/api": "^9.0.1",
     "@polkadot/extension-dapp": "^0.44.2",
     "@polkadot/util-crypto": "^10.1.1",
     "@storybook/addon-actions": "^6.5.9",
@@ -84,6 +92,9 @@
     "@storybook/manager-webpack5": "^6.5.9",
     "@storybook/react": "^6.5.9",
     "@storybook/testing-library": "^0.0.13",
+    "@svgr/webpack": "^6.3.1",
+    "bignumber.js": "^9.0.2",
+    "postcss": "^8.4.14",
     "react": "^17.0.2",
     "react-content-loader": "^6.2.0",
     "react-dom": "^17.0.2",
