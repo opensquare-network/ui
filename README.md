@@ -18,4 +18,4 @@ npm i @osn/common-ui
 
 ## License
 
-MIT &copy; [osn team](https://github.com/opensquare-network)
+MIT &copy; [OpenSquare](https://github.com/opensquare-network)
