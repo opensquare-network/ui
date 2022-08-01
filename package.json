@@ -31,6 +31,10 @@
     "./Account": {
       "import": "./dist/esm/Account",
       "require": "./dist/Account"
+    },
+    "./reset.css": {
+      "import": "./dist/esm/styles/reset.css",
+      "require": "./dist/styles/reset.css"
     }
   },
   "scripts": {
