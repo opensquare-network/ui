@@ -1,5 +1,5 @@
 import "semantic-ui-css/semantic.min.css";
-import "react-mde/lib/styles/css/react-mde-all.css";
+import "../lib/styles/reset.css";
 
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },

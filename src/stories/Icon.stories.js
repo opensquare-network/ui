@@ -1,11 +1,11 @@
 import React from "react";
 
 import More from "../../lib/Icon/More";
-import LoadingDot from "../../lib/Icon/LoadingDot";
+import Loading from "../../lib/Icon/Loading";
 
 export default {
   title: "Icon",
 };
 
 export const more = () => <More />;
-export const loadingDot = () => <LoadingDot />;
+export const loadingDot = () => <Loading />;
