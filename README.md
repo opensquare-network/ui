@@ -16,10 +16,6 @@ To skip CI (GitHub action), add `skip-ci` to commit message. To skip release, ad
 npm i @osn/common-ui
 ```
 
-## Sponsors
-
-[![sponsors](https://cdn.jsdelivr.net/gh/2nthony/sponsors-image/sponsors.svg)](https://github.com/sponsors/2nthony)
-
 ## License
 
 MIT &copy; [osn team](https://github.com/opensquare-network)
