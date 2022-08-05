@@ -61,7 +61,7 @@
     "dayjs": "^1.10.8"
   },
   "peerDependencies": {
-    "@osn/common": "^0.0.13",
+    "@osn/common": "^0.0.18",
     "@osn/constants": "1.1.0",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
@@ -74,7 +74,7 @@
   },
   "devDependencies": {
     "@2nthony/prettier-config": "^1.0.1",
-    "@osn/common": "^0.0.13",
+    "@osn/common": "^0.0.18",
     "@osn/constants": "1.1.0",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",

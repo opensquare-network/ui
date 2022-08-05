@@ -9,13 +9,13 @@ const maintenance = {
 };
 
 const osn = {
-  network: "kusama",
+  network: "statemine",
   address: "ESgz7GLVW7BL5DhRgpVnxSXVwaKt4ytWcrf52TY1GQD1cEb",
 };
 
 const folk = {
-  network: "statemine",
-  address: "Ff3u3eNGBjHyHqvPd3qEeZg51UqJa6AFJRRqJTTj29sp4ST",
+  network: "kusama",
+  address: "5GMuqeMAbNZGVq2bsf2pis7vFMpcP9cMJiRo7DEr5nNEfMhW",
 };
 
 export default {
@@ -90,6 +90,22 @@ export const linkIdentityUser = () => {
           explore
           network={maintenance.network}
           address={maintenance.address}
+          hoverAddressForDetail
+        />
+      </EllipsisWrapper>
+      <EllipsisWrapper>
+        <LinkIdentityUser
+          explore
+          network={folk.network}
+          address={folk.address}
+          hoverAddressForDetail
+        />
+      </EllipsisWrapper>
+      <EllipsisWrapper>
+        <LinkIdentityUser
+          explore
+          network={osn.network}
+          address={osn.address}
           hoverAddressForDetail
         />
       </EllipsisWrapper>
