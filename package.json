@@ -61,8 +61,8 @@
     "dayjs": "^1.10.8"
   },
   "peerDependencies": {
-    "@osn/common": "^0.0.18",
-    "@osn/constants": "1.1.0",
+    "@osn/common": "^0.0.19",
+    "@osn/constants": "1.1.1",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
     "bignumber.js": "^9.0.2",
@@ -74,8 +74,8 @@
   },
   "devDependencies": {
     "@2nthony/prettier-config": "^1.0.1",
-    "@osn/common": "^0.0.18",
-    "@osn/constants": "1.1.0",
+    "@osn/common": "^0.0.19",
+    "@osn/constants": "1.1.1",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
     "@polkadot/api": "^9.0.1",
