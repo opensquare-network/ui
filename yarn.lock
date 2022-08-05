@@ -1462,18 +1462,18 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@osn/common@^0.0.18":
-  version "0.0.18"
-  resolved "https://registry.npmjs.org/@osn/common/-/common-0.0.18.tgz#c364c7efbc7d1be7f7c00cdf8bb50fc2c2ac4500"
-  integrity sha512-Jc7aYHa41jg8MSAXAooeYvcZ1X67KjODejsRygkxQfb5LYTtjspBJWpstuAdsojgyYYxDdWE/vIRvhw1vvfvSw==
+"@osn/common@^0.0.19":
+  version "0.0.19"
+  resolved "https://registry.npmjs.org/@osn/common/-/common-0.0.19.tgz#34b0572f4dd3b5d2ef50bdf256a4d4724a1dbc86"
+  integrity sha512-a9UAazofh4K++DqXFUxwMWIBDnI26g1NUA9eyXSzZZCn8boZymnCiO0s/YK8AvIMSPJ65YFc1LhyBrrcJgo/6g==
   dependencies:
-    "@osn/constants" "^1.1.0"
+    "@osn/constants" "^1.1.1"
     "@osn/provider-options" "^1.0.2"
 
-"@osn/constants@1.1.0", "@osn/constants@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.npmjs.org/@osn/constants/-/constants-1.1.0.tgz#e098c43b7d34b5f4ae9c63772521457d4d480c95"
-  integrity sha512-Rc1LxlVvZ4OrHn+zfXe3KbZpoCJrLloxvLlHzN6nWcsw4SDOBNDguYfZPoKgR24rH8BQebgEDqu+8w0GaFAKgg==
+"@osn/constants@1.1.1", "@osn/constants@^1.1.1":
+  version "1.1.1"
+  resolved "https://registry.npmjs.org/@osn/constants/-/constants-1.1.1.tgz#b64d8fbce333e9a0c73f0f4fd77915cf329c6a7e"
+  integrity sha512-5wXukECKQIi0xXsGG38IAezgxS19zdph2jsnabbTHpJ0kDk1kMxCd3HL+2kzxyz/7w/wPWz/qg940qQs4N2ozA==
 
 "@osn/polkadot-react-identicon@^1.0.8":
   version "1.0.8"
