@@ -1462,10 +1462,10 @@
     mkdirp "^1.0.4"
     rimraf "^3.0.2"
 
-"@osn/common@^0.0.13":
-  version "0.0.13"
-  resolved "https://registry.npmjs.org/@osn/common/-/common-0.0.13.tgz#5aca22fd20275b71933e42439037a2304119fb1d"
-  integrity sha512-ggzhkPny0APo4Rgr5YVlyhftBBaMR98OxWmA0QnFNOgEKudV1eTV1lVqzTM8wVuWbdqZWAbobZSXpZzXsTgAqA==
+"@osn/common@^0.0.18":
+  version "0.0.18"
+  resolved "https://registry.npmjs.org/@osn/common/-/common-0.0.18.tgz#c364c7efbc7d1be7f7c00cdf8bb50fc2c2ac4500"
+  integrity sha512-Jc7aYHa41jg8MSAXAooeYvcZ1X67KjODejsRygkxQfb5LYTtjspBJWpstuAdsojgyYYxDdWE/vIRvhw1vvfvSw==
   dependencies:
     "@osn/constants" "^1.1.0"
     "@osn/provider-options" "^1.0.2"
