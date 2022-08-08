@@ -40,7 +40,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "storybook": "BROWSER=none start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 --no-open",
     "build-storybook": "build-storybook",
     "prepublishOnly": "npm run test && npm run build"
   },
@@ -58,11 +58,13 @@
   "dependencies": {
     "@osn/polkadot-react-identicon": "^1.0.8",
     "copy-to-clipboard": "^3.3.1",
-    "dayjs": "^1.10.8"
+    "dayjs": "^1.10.8",
+    "ethereum-blockies-base64": "^1.0.2",
+    "ethers": "^5.6.9"
   },
   "peerDependencies": {
-    "@osn/common": "^0.0.19",
-    "@osn/constants": "1.1.1",
+    "@osn/common": "^0.0.20",
+    "@osn/constants": "^1.1.2",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
     "bignumber.js": "^9.0.2",
@@ -74,8 +76,8 @@
   },
   "devDependencies": {
     "@2nthony/prettier-config": "^1.0.1",
-    "@osn/common": "^0.0.19",
-    "@osn/constants": "1.1.1",
+    "@osn/common": "^0.0.20",
+    "@osn/constants": "^1.1.2",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
     "@polkadot/api": "^9.0.1",

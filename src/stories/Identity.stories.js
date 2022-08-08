@@ -18,6 +18,11 @@ const folk = {
   address: "5GMuqeMAbNZGVq2bsf2pis7vFMpcP9cMJiRo7DEr5nNEfMhW",
 };
 
+const moonriver = {
+  network: "moonriver",
+  address: "0xbfdc403a22a073b36489aa0255784442ee8ba450",
+};
+
 export default {
   title: "Identity",
   component: IdentityUser,
@@ -32,6 +37,9 @@ export const primary = () => (
     <br />
 
     <IdentityUser network={folk.network} address={folk.address} />
+    <br />
+
+    <IdentityUser network={moonriver.network} address={moonriver.address} />
   </>
 );
 
