@@ -1,5 +1,6 @@
 import { useState } from "react";
 import RichEditor from "../../lib/RichEdit";
+import Button from "../../lib/styled/Button";
 
 export default {
   name: "RichEditor",
@@ -60,7 +61,7 @@ export const disabled = () => {
 
 export const submitButtonText = () => {
   const [content, setContent] = useState(
-    "change the submit button name to `Submit`"
+    "change the submit button name to `Submit`",
   );
   return (
     <RichEditor
@@ -84,7 +85,7 @@ export const errorMsg = () => {
 
 export const onSubmit = () => {
   const [content, setContent] = useState(
-    "click the Post button to get an alert"
+    "click the Post button to get an alert",
   );
   return (
     <RichEditor
@@ -124,23 +125,26 @@ export const hidePreviewButton = () => {
   );
 };
 
-export const previewButtonBlock = () => {
-  const [content, setContent] = useState("preview button block");
+export const extraButtons = () => {
+  const [content, setContent] = useState("extra buttons");
+
   return (
     <RichEditor
       content={content}
-      previewButtonProps={{
-        block: true,
-      }}
-      showSubmitButton={false}
       setContent={setContent}
+      extraButtons={
+        <>
+          <Button>Third</Button>
+          <Button>Cancel</Button>
+        </>
+      }
     />
   );
 };
 
 export const loadSuggestions = () => {
   const [content, setContent] = useState(
-    "type `@` to get suggestions here 👇\n\n"
+    "type `@` to get suggestions here 👇\n\n",
   );
   const loadSuggestions = () => {
     return [
