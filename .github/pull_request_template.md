@@ -1,12 +1,14 @@
-## PR title format
+## Commit message format
 
-If this PR needed to release a new version, the PR title format following below:
+If this PR needed to release a new version, the **commit message format** following below:
 
-- `feat: xxxxx`: minor version
-- `fix: xxxxx`: patch version
+- `feat: xxxxx`: will release minor version
+- `fix: xxxxx`: will release patch version
 - Otherwise will not trigger the CI release job
 
-For example: `feat(card): support ghost`.
+Commit message format example: `feat(card): support ghost`.
+
+And then merge this PR via **Square merge**.
 
 Read https://semantic-release.gitbook.io/semantic-release/#commit-message-format for more details.
 
