@@ -10,4 +10,4 @@ npm i @osn/common-ui
 
 ## License
 
-MIT &copy; [OpenSquare](https://github.com/opensquare-network)
+Apache-2.0 &copy; [OpenSquare](https://github.com/opensquare-network)
