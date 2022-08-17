@@ -31,6 +31,7 @@ export const Available = () => {
       <ChainIcon chainName="acala" showTooltip />
       <ChainIcon chainName="crust" showTooltip />
       <ChainIcon chainName="ethereum" showTooltip />
+      <ChainIcon chainName="zeitgeist" showTooltip />
       <ChainIcon chainName="shiden" showTooltip />
     </Flex>
   );
