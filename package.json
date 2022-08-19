@@ -67,6 +67,8 @@
     "@osn/constants": "^1.1.2",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
+    "@polkadot/extension-dapp": "*",
+    "@polkadot/util-crypto": "*",
     "bignumber.js": "^9.0.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
