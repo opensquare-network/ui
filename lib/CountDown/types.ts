@@ -16,5 +16,4 @@ export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
     minutes: number,
     seconds: number,
   ): ReactNode;
-  circlePopperContent: ReactNode;
 };
