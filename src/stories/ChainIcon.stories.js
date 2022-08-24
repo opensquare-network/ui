@@ -6,11 +6,11 @@ export default {
   title: "ChainIcon",
   component: ChainIcon,
 };
-export const Unknown = () => <ChainIcon />;
 
 export const Available = () => {
   return (
     <Flex style={{ gap: 8, padding: 40 }}>
+      <ChainIcon />
       <ChainIcon chainName="default" showTooltip />
       <ChainIcon chainName="kusama" showTooltip />
       <ChainIcon chainName="statemine" showTooltip />
@@ -33,6 +33,7 @@ export const Available = () => {
       <ChainIcon chainName="ethereum" showTooltip />
       <ChainIcon chainName="zeitgeist" showTooltip />
       <ChainIcon chainName="shiden" showTooltip />
+      <ChainIcon chainName="altair" showTooltip />
     </Flex>
   );
 };
