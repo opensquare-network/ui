@@ -1,12 +1,15 @@
 import React, { ReactNode } from "react";
 
 export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
-  currentBlockHeight?: number;
-  currentBlockTime?: number;
-  unlockBlockHeight?: number;
-  unlockBlockTime?: number;
-  awardBlockHeight?: number;
-  awardBlockTime?: number;
+  /**
+   * @default 12000
+   */
+  blockTime?: number;
+  blockHeight?: number;
+  startBlockHeight?: number;
+  startBlockTime?: number;
+  endBlockHeight?: number;
+  endBlockTime?: number;
   size?: number;
   circleForegroundColor?: string;
   circleBackgroundColor?: string;
