@@ -1,5 +1,12 @@
 import React, { ReactNode } from "react";
 
+type EstimateTime = {
+  days: number;
+  hours: number;
+  minutes: number;
+  seconds: number;
+};
+
 export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
   /**
    * @default 12000
@@ -13,10 +20,5 @@ export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
   size?: number;
   circleForegroundColor?: string;
   circleBackgroundColor?: string;
-  timeRender?(
-    days: number,
-    hours: number,
-    minutes: number,
-    seconds: number,
-  ): ReactNode;
+  timeRender?(time: EstimateTime & { timeString: string }): ReactNode;
 };
