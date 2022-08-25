@@ -1,6 +1,4 @@
-import React from "react";
-
-export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
+export type CountDownProps = {
   blockHeight?: number;
   startBlockHeight?: number;
   endBlockHeight?: number;
