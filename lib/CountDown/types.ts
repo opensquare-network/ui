@@ -3,7 +3,7 @@ import { extractTime } from "@polkadot/util";
 
 export type EstimateTime = ReturnType<typeof extractTime>;
 
-export type Time = EstimateTime & { timeString: string };
+export type Time = EstimateTime & { defaultTimeString: string };
 
 export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
   /**
