@@ -7,4 +7,9 @@ export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
   size?: number;
   foregroundColor?: string;
   backgroundColor?: string;
+
+  /**
+   * @default true
+   */
+  showTooltip?: boolean;
 };
