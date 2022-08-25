@@ -10,18 +10,27 @@ const DemoWrapper = styled.div`
   margin: 100px 0 0 150px;
 `;
 
+const Text = styled.div`
+  display: flex;
+  align-items: center;
+
+  p {
+    margin-left: 5px;
+  }
+`;
+
 export const primary = () => {
   return (
     <DemoWrapper>
-      <div>
+      <Text>
         <CountDown
           blockTime={12000}
           blockHeight={11353045}
           startBlockHeight={11220214}
           endBlockHeight={11404800}
         />
-        asdf
-      </div>
+        <p>Some description</p>
+      </Text>
     </DemoWrapper>
   );
 };
