@@ -5,6 +5,6 @@ export type CountDownProps = React.SVGAttributes<SVGSVGElement> & {
   startBlockHeight?: number;
   endBlockHeight?: number;
   size?: number;
-  circleForegroundColor?: string;
-  circleBackgroundColor?: string;
+  foregroundColor?: string;
+  backgroundColor?: string;
 };
