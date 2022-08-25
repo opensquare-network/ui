@@ -40,3 +40,17 @@ export const color = () => {
     </DemoWrapper>
   );
 };
+
+export const noTooltip = () => {
+  return (
+    <DemoWrapper>
+      <CountDown
+        blockTime={12000}
+        blockHeight={11353045}
+        startBlockHeight={11220214}
+        endBlockHeight={11404800}
+        showTooltip={false}
+      />
+    </DemoWrapper>
+  );
+};
