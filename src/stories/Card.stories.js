@@ -111,3 +111,10 @@ export const prefixAndSuffix = () => {
     </Card>
   );
 };
+export const hoverable = () => (
+  <DemoWrapper>
+    <Card title="Hoverable" hoverable extra={<Link href="/">Extra link</Link>}>
+      <p>Card content</p>
+    </Card>
+  </DemoWrapper>
+);
