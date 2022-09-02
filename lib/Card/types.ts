@@ -10,4 +10,10 @@ export type CardProps = React.HTMLAttributes<HTMLDivElement> & {
   bordered?: boolean;
   prefix?: ReactNode;
   suffix?: ReactNode;
+
+  /**
+   * @default false
+   * @description Lift up when hovering card
+   */
+  hoverable?: boolean;
 };
