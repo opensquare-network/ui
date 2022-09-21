@@ -34,6 +34,7 @@ export const Available = () => {
       <ChainIcon chainName="zeitgeist" showTooltip />
       <ChainIcon chainName="shiden" showTooltip />
       <ChainIcon chainName="altair" showTooltip />
+      <ChainIcon chainName="parallel" showTooltip />
     </Flex>
   );
 };
