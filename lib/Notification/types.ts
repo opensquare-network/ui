@@ -4,7 +4,8 @@ export type NotificationType =
   | "error"
   | "info"
   | "pending"
-  | "notice";
+  | "notice"
+  | "warning";
 
 export type NotificationOptions = {
   title?: string;
