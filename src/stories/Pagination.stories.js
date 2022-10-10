@@ -83,3 +83,7 @@ export const onChange = () => {
     />
   );
 };
+export const lessData = () => {
+  const [page, setPage] = useState(1);
+  return <Pagination page={page} pageSize={10} total={2} setPage={setPage} />;
+};
