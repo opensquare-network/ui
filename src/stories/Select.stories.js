@@ -8,6 +8,7 @@ export default {
 };
 
 const DemoWrapper = styled.div`
+  width: 200px;
   .osn-select {
     margin-bottom: 1rem;
   }
@@ -31,7 +32,11 @@ export const primary = () => {
     setValue(v);
   }
 
-  return <Select options={options} value={value} onSelect={onSelect} />;
+  return (
+    <DemoWrapper>
+      <Select options={options} value={value} onSelect={onSelect} />
+    </DemoWrapper>
+  );
 };
 
 export const sizes = () => {
@@ -66,6 +71,33 @@ export const sizes = () => {
         options={options}
         value={value}
         onSelect={onSelect}
+      />
+    </DemoWrapper>
+  );
+};
+
+export const realCase = () => {
+  const [value, setValue] = useState("curator view");
+
+  const options = [
+    {
+      content: "Curator view",
+      value: "curator view",
+    },
+    {
+      content: "Hunter view",
+      value: "hunter view",
+    },
+  ];
+
+  return (
+    <DemoWrapper>
+      <Select
+        size="small"
+        options={options}
+        value={value}
+        onSelect={setValue}
+        width={136}
       />
     </DemoWrapper>
   );

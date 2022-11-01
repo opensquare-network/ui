@@ -20,4 +20,9 @@ export type SelectProps = HTMLAttributes<HTMLDivElement> & {
   size?: Size;
 
   onSelect?: (value: Value) => void;
+
+  /**
+   * @description select width, if unset, will match `options.content` width
+   */
+  width?: number;
 };
