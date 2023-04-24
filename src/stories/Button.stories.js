@@ -7,6 +7,7 @@ export default {
 };
 
 const DemoWrapper = styled.div`
+  display: flex;
   button {
     margin-right: 10px;
     margin-bottom: 12px;
