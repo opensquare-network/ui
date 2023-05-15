@@ -44,7 +44,7 @@ export const orange = () => (
   </DemoWrapper>
 );
 export const block = () => (
-  <DemoWrapper>
+  <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
     <Button primary block>
       block
     </Button>
@@ -52,7 +52,7 @@ export const block = () => (
     <Button block disabled>
       disabled
     </Button>
-  </DemoWrapper>
+  </div>
 );
 export const onClick = () => {
   const greeting = () => alert("Hello");
