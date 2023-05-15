@@ -34,7 +34,7 @@ export type CreateNotificationOptions = NotificationOptions & {
 
 export type CreateNotification = (
   options: CreateNotificationOptions,
-) => DestroyCallback;
+) => Promise<DestroyCallback>;
 
 export type DestroyCallback = () => void;
 
