@@ -3153,6 +3153,7 @@ __metadata:
     ethereum-blockies-base64: ^1.0.2
     ethers: ^5.6.9
     file-loader: ^6.2.0
+    jotai: ^2.1.0
     postcss: ^8.4.14
     react: ^18.2.0
     react-content-loader: ^6.2.0
@@ -10220,6 +10221,18 @@ __metadata:
     merge-stream: ^2.0.0
     supports-color: ^8.0.0
   checksum: 1151a1ae3602b1ea7c42a8f1efe2b5a7bf927039deaa0827bf978880169899b705744e288f80a63603fb3fc2985e0071234986af7dc2c21c7a64333d8777c7c9
+  languageName: node
+  linkType: hard
+
+"jotai@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "jotai@npm:2.1.0"
+  peerDependencies:
+    react: ">=17.0.0"
+  peerDependenciesMeta:
+    react:
+      optional: true
+  checksum: 060b78dd221950c52e2c796f122b86b2cbbe99ba2b57e8c999a9b5403fd5f970cb8834296f0ac20bace85af8f96a8aac573efb9515382d215bbeace6c417a074
   languageName: node
   linkType: hard
 
