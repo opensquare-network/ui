@@ -3127,8 +3127,8 @@ __metadata:
     "@osn/common": ^1.3.7
     "@osn/constants": ^1.1.2
     "@osn/polkadot-react-identicon": ^1.0.10
-    "@osn/previewer": ^0.12.3
-    "@osn/rich-text-editor": ^0.1.56
+    "@osn/previewer": ^0.12.4
+    "@osn/rich-text-editor": ^0.1.59
     "@polkadot/api": ^9.0.1
     "@polkadot/extension-dapp": ^0.44.2
     "@polkadot/util-crypto": ^10.1.1
@@ -3223,9 +3223,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@osn/previewer@npm:^0.12.3":
-  version: 0.12.3
-  resolution: "@osn/previewer@npm:0.12.3"
+"@osn/previewer@npm:^0.12.4":
+  version: 0.12.4
+  resolution: "@osn/previewer@npm:0.12.4"
   dependencies:
     marked: ^4.0.17
     prismjs: ^1.28.0
@@ -3234,7 +3234,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     styled-components: ^5.3.5
-  checksum: 5c761500811f9fa204e21bce71c6032cd0baf219b4376875258f71d4757233301daa67beaf99d53868712ecdfc87f276467b6de0ebb1e674017a22e70755e9fa
+  checksum: 0011c27f7f24e6f7e778ccd7882f61489804bc4ad0c7c0e4fdf314158e9d7fa95df56f24267fd9b42b77ab693ee36ef7af1a7591e42b4527d0c0f4c5290ce66f
   languageName: node
   linkType: hard
 
@@ -3245,9 +3245,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@osn/rich-text-editor@npm:^0.1.56":
-  version: 0.1.56
-  resolution: "@osn/rich-text-editor@npm:0.1.56"
+"@osn/rich-text-editor@npm:^0.1.59":
+  version: 0.1.59
+  resolution: "@osn/rich-text-editor@npm:0.1.59"
   dependencies:
     lodash: ^4.17.21
     marked: ^4.0.15
@@ -3258,7 +3258,7 @@ __metadata:
     "@osn/previewer": ^0.10.3
     react: ^17.0.2
     styled-components: ^5.3.1
-  checksum: be802462ad4f75aa60571de07db31d85555cbbe813af5502d3db69d6a7629c5d0ad6202edf7bbeb5cd4b3c19fbc6e0f298e6680905543053307ad068304a58d5
+  checksum: 5150dae230ab4dd7bafdf24383a01027cadbc22f2d1130c684038e020baef449eeb8499ec7d7c90dc842a71c2c5031ae47546845be040157e122ea8a0a9324fb
   languageName: node
   linkType: hard
 
