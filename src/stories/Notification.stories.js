@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import Notification, { notification } from "../../lib/Notification";
+import Notification, {
+  notification,
+  useNotification,
+  NotificationContainer,
+} from "../../lib/Notification";
 import Button from "../../lib/styled/Button";
 
 export default {
@@ -31,9 +35,12 @@ export const primary = () => {
   );
 };
 
-export const callApi = () => {
+export const hooks = () => {
+  const notification = useNotification();
+
   return (
     <DemoCallApiWrapper>
+      <NotificationContainer />
       <Button
         onClick={() => {
           notification.open({
