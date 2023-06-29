@@ -14,6 +14,5 @@ export default defineConfig({
     ".woff": "copy",
     ".woff2": "copy",
   },
-  dts: "lib/index.js",
   external: ["semantic-ui-css", "semantic-ui-react"],
 });
