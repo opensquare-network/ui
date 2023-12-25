@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --neutralGray0: rgba(255, 255, 255, 1);
+    --neutralGray25: rgba(252, 252, 253, 1);
+    --neutralGray50: rgba(249, 250, 251, 1);
+    --neutralGray100: rgba(242, 244, 247, 1);
+    --neutralGray200: rgba(234, 236, 240, 1);
+    --neutralGray300: rgba(208, 213, 221, 1);
+    --neutralGray400: rgba(152, 162, 179, 1);
+    --neutralGray500: rgba(102, 112, 133, 1);
+    --neutralGray600: rgba(71, 84, 103, 1);
+    --neutralGray700: rgba(52, 64, 84, 1);
+    --neutralGray800: rgba(23, 34, 51, 1);
+    --neutralGray900: rgba(16, 24, 40, 1);
+    --neutralGray950: rgba(13, 19, 33, 1);
+    --neutralGray1000: rgba(0, 0, 0, 1);
+    --brandPurple25a: rgba(108, 79, 242, 0.1);
+    --brandPurple50a: rgba(108, 79, 242, 0.2);
+    --brandPurple100a: rgba(108, 79, 242, 0.32);
+    --brandPurple200a: rgba(108, 79, 242, 0.46);
+    --brandPurple300a: rgba(108, 79, 242, 0.62);
+    --brandPurple400a: rgba(108, 79, 242, 0.8);
+    --brandPurple500a: rgba(108, 79, 242, 1);
+    --brandTurquoise25a: rgba(0, 200, 187, 0.1);
+    --brandTurquoise50a: rgba(0, 200, 187, 0.2);
+    --brandTurquoise100a: rgba(0, 200, 187, 0.32);
+    --brandTurquoise200a: rgba(0, 200, 187, 0.46);
+    --brandTurquoise300a: rgba(0, 200, 187, 0.62);
+    --brandTurquoise400a: rgba(0, 200, 187, 0.8);
+    --brandTurquoise500a: rgba(0, 200, 187, 1);
+    --accentGreen25a: rgba(76, 175, 80, 0.1);
+    --accentGreen50a: rgba(76, 175, 80, 0.2);
+    --accentGreen100a: rgba(76, 175, 80, 0.32);
+    --accentGreen200a: rgba(76, 175, 80, 0.46);
+    --accentGreen300a: rgba(76, 175, 80, 0.62);
+    --accentGreen400a: rgba(76, 175, 80, 0.8);
+    --accentGreen500a: rgba(76, 175, 80, 1);
+    --accentYellow25a: rgba(226, 157, 22, 0.1);
+    --accentYellow50a: rgba(226, 157, 22, 0.2);
+    --accentYellow100a: rgba(226, 157, 22, 0.32);
+    --accentYellow200a: rgba(226, 157, 22, 0.46);
+    --accentYellow300a: rgba(226, 157, 22, 0.62);
+    --accentYellow400a: rgba(226, 157, 22, 0.8);
+    --accentYellow500a: rgba(226, 157, 22, 1);
+    --accentRed25a: rgba(211, 61, 70, 0.1);
+    --accentRed50a: rgba(211, 61, 70, 0.2);
+    --accentRed100a: rgba(211, 61, 70, 0.32);
+    --accentRed200a: rgba(211, 61, 70, 0.46);
+    --accentRed300a: rgba(211, 61, 70, 0.62);
+    --accentRed400a: rgba(211, 61, 70, 0.8);
+    --accentRed500a: rgba(211, 61, 70, 1);
+    --accentBlue25a: rgba(33, 114, 201, 0.1);
+    --accentBlue50a: rgba(33, 114, 201, 0.2);
+    --accentBlue100a: rgba(33, 114, 201, 0.32);
+    --accentBlue200a: rgba(33, 114, 201, 0.46);
+    --accentBlue300a: rgba(33, 114, 201, 0.62);
+    --accentBlue400a: rgba(33, 114, 201, 0.8);
+    --accentBlue500a: rgba(33, 114, 201, 1);
+  }
+}
