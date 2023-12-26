@@ -61,4 +61,72 @@
     --accentBlue400a: rgba(33, 114, 201, 0.8);
     --accentBlue500a: rgba(33, 114, 201, 1);
   }
+
+  :root {
+    --textPrimary: var(--neutralGray900);
+    --textSecondary: var(--neutralGray600);
+    --textTertiary: var(--neutralGray400);
+    --textQuaternary: var(--neutralGray300);
+    --textPrimaryContrast: var(--neutralGray0);
+    --textSecondaryContrast: var(--neutralGray400);
+    --textTertiaryContrast: var(--neutralGray600);
+    --textQuaternaryContrast: var(--neutralGray700);
+    --textBrandPrimary: var(--brandPurple500a);
+    --textBrandSecondary: var(--brandTurquoise500a);
+    --textLink: var(--accentBlue500a);
+    --textFeedbackSuccess: var(--accentGreen500a);
+    --textFeedbackWarning: var(--accentYellow500a);
+    --textFeedbackError: var(--accentRed500a);
+    --fillBgPrimary: var(--neutralGray0);
+    --fillBgSecondary: var(--neutralGray25);
+    --fillBgTertiary: var(--neutralGray100);
+    --fillBgQuaternary: var(--neutralGray200);
+    --fillBgPrimaryContrast: var(--neutralGray950);
+    --fillBgBrandPrimary: var(--brandPurple500a);
+    --fillBgBrandSecondary: var(--brandTurquoise500a);
+    --fillBgBrandSecondaryBack: var(--brandTurquoise25a);
+    --fillBgBrandDisable: var(--neutralGray300);
+    --fillBgFeedbackError: var(--accentRed25a);
+    --fillBgInputDefault: var(--neutralGray25);
+    --fillBgInputDisable: var(--neutralGray25);
+    --strokeBorderDefault: var(--neutralGray100);
+    --strokeActionDefault: var(--neutralGray300);
+    --strokeActionActive: var(--neutralGray400);
+    --strokeActionDisable: var(--neutralGray200);
+    --strokeBgBrandSecondary: var(--brandTurquoise500a);
+  }
+
+  .dark:root {
+    --textPrimary: var(--neutralGray200);
+    --textSecondary: var(--neutralGray400);
+    --textTertiary: var(--neutralGray600);
+    --textQuaternary: var(--neutralGray700);
+    --textPrimaryContrast: var(--neutralGray100);
+    --textSecondaryContrast: var(--neutralGray400);
+    --textTertiaryContrast: var(--neutralGray600);
+    --textQuaternaryContrast: var(--neutralGray700);
+    --textBrandPrimary: var(--brandPurple500a);
+    --textBrandSecondary: var(--brandTurquoise500a);
+    --textLink: var(--accentBlue500a);
+    --textFeedbackSuccess: var(--accentGreen500a);
+    --textFeedbackWarning: var(--accentYellow500a);
+    --textFeedbackError: var(--accentRed500a);
+    --fillBgPrimary: var(--neutralGray900);
+    --fillBgSecondary: var(--neutralGray950);
+    --fillBgTertiary: var(--neutralGray800);
+    --fillBgQuaternary: var(--neutralGray700);
+    --fillBgPrimaryContrast: var(--neutralGray950);
+    --fillBgBrandPrimary: var(--brandPurple500a);
+    --fillBgBrandSecondary: var(--brandTurquoise500a);
+    --fillBgBrandSecondaryBack: var(--brandTurquoise25a);
+    --fillBgBrandDisable: var(--neutralGray600);
+    --fillBgFeedbackError: var(--accentRed25a);
+    --fillBgInputDefault: var(--neutralGray800);
+    --fillBgInputDisable: var(--neutralGray900);
+    --strokeBorderDefault: var(--neutralGray800);
+    --strokeActionDefault: var(--neutralGray700);
+    --strokeActionActive: var(--neutralGray400);
+    --strokeActionDisable: var(--neutralGray800);
+    --strokeBgBrandSecondary: var(--brandTurquoise500a);
+  }
 }
