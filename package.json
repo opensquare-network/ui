@@ -53,7 +53,8 @@
     }
   ],
   "files": [
-    "dist"
+    "dist",
+    "tailwind"
   ],
   "dependencies": {
     "@osn/polkadot-react-identicon": "^1.0.10",
