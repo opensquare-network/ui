@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer base {
+  /* base */
   :root {
     --neutralGray0: rgba(255, 255, 255, 1);
     --neutralGray25: rgba(252, 252, 253, 1);
@@ -62,6 +63,7 @@
     --accentBlue500a: rgba(33, 114, 201, 1);
   }
 
+  /* tokens */
   :root {
     --textPrimary: var(--neutralGray900);
     --textSecondary: var(--neutralGray600);
@@ -95,7 +97,6 @@
     --strokeActionDisable: var(--neutralGray200);
     --strokeBgBrandSecondary: var(--brandTurquoise500a);
   }
-
   .dark:root {
     --textPrimary: var(--neutralGray200);
     --textSecondary: var(--neutralGray400);
@@ -128,5 +129,10 @@
     --strokeActionActive: var(--neutralGray400);
     --strokeActionDisable: var(--neutralGray800);
     --strokeBgBrandSecondary: var(--brandTurquoise500a);
+  }
+
+  /* vars */
+  :root {
+    --container-width: 1440px;
   }
 }
