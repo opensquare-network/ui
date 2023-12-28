@@ -130,9 +130,4 @@
     --strokeActionDisable: var(--neutralGray800);
     --strokeBgBrandSecondary: var(--brandTurquoise500a);
   }
-
-  /* vars */
-  :root {
-    --container-width: 1440px;
-  }
 }
