@@ -134,4 +134,21 @@
     --strokeActionDisable: var(--neutralGray800);
     --strokeBgBrandSecondary: var(--brandTurquoise500a);
   }
+
+  /* effects */
+  :root {
+    --shadowCardDefault: 0px 0.75px 4px rgba(26, 33, 44, 0.03),
+      0px 4px 31px rgba(26, 33, 44, 0.04);
+    --shadowCardHover: 0px 0.75px 8px rgba(26, 33, 44, 0.06),
+      0px 4px 31px rgba(26, 33, 44, 0.08);
+    --shadowPopup: var(--shadowCardHover);
+  }
+}
+
+html {
+  /* override semantic ui */
+  font-size: unset;
+}
+body {
+  @apply text-textPrimary bg-fillBgSecondary antialiased;
 }

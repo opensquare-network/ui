@@ -9,6 +9,11 @@ module.exports = {
       colors: {
         ...colorTokens,
       },
+      boxShadow: {
+        shadowCardDefault: "var(--shadowCardDefault)",
+        shadowCardHover: "var(--shadowCardHover)",
+        shadowPopup: "var(--shadowPopup)",
+      },
     },
   },
   plugins: [require("./plugin-fonts"), require("tailwind-scrollbar")],
