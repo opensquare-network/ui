@@ -57,6 +57,7 @@
     "tailwind"
   ],
   "dependencies": {
+    "@osn/icons": "^1.47.0",
     "@osn/polkadot-react-identicon": "^1.0.10",
     "@popperjs/core": "^2.11.6",
     "copy-to-clipboard": "^3.3.1",
