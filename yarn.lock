@@ -4670,7 +4670,6 @@ __metadata:
     "@polkadot/api": ^9.0.1
     "@polkadot/extension-dapp": ^0.44.2
     "@polkadot/util-crypto": ^10.1.1
-    "@popperjs/core": ^2.11.6
     "@radix-ui/react-tooltip": ^1.0.7
     "@storybook/addon-actions": ^7.0.11
     "@storybook/addon-essentials": ^7.0.11
@@ -5543,13 +5542,6 @@ __metadata:
     "@types/websocket": ^1.0.5
     websocket: ^1.0.34
   checksum: 08ac81dd877785b5eca8dccd147426720c775b7d610cb700800e14ebee0ce2a5bc5f970fa7b0cc01b595f48c780e9d17f6861053a4503ca9b321b888182b8274
-  languageName: node
-  linkType: hard
-
-"@popperjs/core@npm:^2.11.6":
-  version: 2.11.6
-  resolution: "@popperjs/core@npm:2.11.6"
-  checksum: 47fb328cec1924559d759b48235c78574f2d71a8a6c4c03edb6de5d7074078371633b91e39bbf3f901b32aa8af9b9d8f82834856d2f5737a23475036b16817f0
   languageName: node
   linkType: hard
 
