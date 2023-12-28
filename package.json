@@ -60,7 +60,6 @@
     "@osn/icons": "^1.48.2",
     "@osn/polkadot-react-identicon": "^1.0.10",
     "@radix-ui/react-tooltip": "^1.0.7",
-    "copy-to-clipboard": "^3.3.1",
     "d3-selection": "^3.0.0",
     "d3-shape": "^3.1.0",
     "dayjs": "^1.10.8",
