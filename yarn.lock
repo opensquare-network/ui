@@ -4826,7 +4826,7 @@ __metadata:
     "@osn/eslint-config": ^1.0.1
     "@osn/icons": ^1.48.2
     "@osn/polkadot-react-identicon": ^1.0.10
-    "@osn/previewer": ^0.12.4
+    "@osn/previewer": ^0.12.8
     "@osn/rich-text-editor": ^0.6.5
     "@polkadot/api": ^9.0.1
     "@polkadot/extension-dapp": ^0.44.2
@@ -4949,9 +4949,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@osn/previewer@npm:^0.12.4":
-  version: 0.12.4
-  resolution: "@osn/previewer@npm:0.12.4"
+"@osn/previewer@npm:^0.12.8":
+  version: 0.12.8
+  resolution: "@osn/previewer@npm:0.12.8"
   dependencies:
     marked: ^4.0.17
     prismjs: ^1.28.0
@@ -4960,7 +4960,7 @@ __metadata:
     react: ^17.0.2
     react-dom: ^17.0.2
     styled-components: ^5.3.5
-  checksum: 0011c27f7f24e6f7e778ccd7882f61489804bc4ad0c7c0e4fdf314158e9d7fa95df56f24267fd9b42b77ab693ee36ef7af1a7591e42b4527d0c0f4c5290ce66f
+  checksum: a83f32992804f843f189f070de8ee5b7cc14a671ba9ff0f159cf041ddb83f8cc82b224989e83289ac28d3e8b66a89d5c083b2d1e9314c451b990291a16012d67
   languageName: node
   linkType: hard
 
