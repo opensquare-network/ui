@@ -124,7 +124,7 @@
   --fillBgBrandSecondaryBack: var(--brandTurquoise25a);
   --fillBgBrandDisable: var(--neutralGray600);
   --fillBgFeedbackError: var(--accentRed25a);
-  --fillBgInputDefault: var(--neutralGray800);
+  --fillBgInputDefault: var(--neutralGray950);
   --fillBgInputDisable: var(--neutralGray900);
   --fillBgLinkBack: var(--accentBlue25a);
   --strokeBorderDefault: var(--neutralGray800);
