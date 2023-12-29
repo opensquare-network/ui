@@ -59,9 +59,7 @@ export const onClick = () => {
 
   return (
     <DemoWrapper>
-      <Button primary onClick={greeting}>
-        greeting
-      </Button>
+      <Button onClick={greeting}>greeting</Button>
       <Button disabled onClick={greeting}>
         won't work
       </Button>
