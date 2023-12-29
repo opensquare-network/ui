@@ -35,6 +35,10 @@
     "./reset.css": {
       "import": "./dist/esm/styles/reset.css",
       "require": "./dist/styles/reset.css"
+    },
+    "./tailwind/*": {
+      "import": "./tailwind/*",
+      "require": "./tailwind/*"
     }
   },
   "scripts": {
