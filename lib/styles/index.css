@@ -154,3 +154,29 @@ body {
   color: var(--textPrimary);
   background-color: var(--fillBgSecondary);
 }
+
+.rich-editor {
+  .markdown-body {
+    color: var(--textPrimary);
+
+    th {
+      background-color: var(--fillBgTertiary) !important;
+    }
+    tbody tr:nth-child(even) {
+      background-color: var(--fillBgPrimary) !important;
+    }
+    hr {
+      background-color: var(--strokeBorderDefault) !important;
+    }
+    th,
+    td {
+      color: inherit !important;
+      border: 1px solid var(--strokeBorderDefault) !important;
+    }
+    pre,
+    code {
+      color: inherit !important;
+      background-color: var(--fillBgTertiary) !important;
+    }
+  }
+}
