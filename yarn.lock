@@ -4827,7 +4827,7 @@ __metadata:
     "@osn/icons": ^1.48.2
     "@osn/polkadot-react-identicon": ^1.0.10
     "@osn/previewer": ^0.12.4
-    "@osn/rich-text-editor": ^0.1.59
+    "@osn/rich-text-editor": ^0.6.3
     "@polkadot/api": ^9.0.1
     "@polkadot/extension-dapp": ^0.44.2
     "@polkadot/util-crypto": ^10.1.1
@@ -4971,9 +4971,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@osn/rich-text-editor@npm:^0.1.59":
-  version: 0.1.59
-  resolution: "@osn/rich-text-editor@npm:0.1.59"
+"@osn/rich-text-editor@npm:^0.6.3":
+  version: 0.6.3
+  resolution: "@osn/rich-text-editor@npm:0.6.3"
   dependencies:
     lodash: ^4.17.21
     marked: ^4.0.15
@@ -4984,7 +4984,7 @@ __metadata:
     "@osn/previewer": ^0.10.3
     react: ^17.0.2
     styled-components: ^5.3.1
-  checksum: 5150dae230ab4dd7bafdf24383a01027cadbc22f2d1130c684038e020baef449eeb8499ec7d7c90dc842a71c2c5031ae47546845be040157e122ea8a0a9324fb
+  checksum: 39a9eaa02c4e2fec5608a22a90fd3ffd6ce6c84070640ae05d4d5ec018e0ea433a55ce8659135be899ce634407861179e06e048c8bc5fac136d60fc2d9718786
   languageName: node
   linkType: hard
 

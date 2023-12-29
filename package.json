@@ -93,7 +93,7 @@
     "@osn/constants": "^1.1.2",
     "@osn/eslint-config": "^1.0.1",
     "@osn/previewer": "^0.12.4",
-    "@osn/rich-text-editor": "^0.1.59",
+    "@osn/rich-text-editor": "^0.6.3",
     "@polkadot/api": "^9.0.1",
     "@polkadot/extension-dapp": "^0.44.2",
     "@polkadot/util-crypto": "^10.1.1",
