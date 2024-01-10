@@ -24,6 +24,9 @@
       "import": "./dist/esm/*",
       "require": "./dist/*"
     },
+    "./lib/*": {
+      "import": "./lib/*"
+    },
     "./RichEditor": {
       "import": "./dist/esm/RichEditor",
       "require": "./dist/RichEditor"
@@ -70,7 +73,8 @@
     "ethereum-blockies-base64": "^1.0.2",
     "ethers": "^5.6.9",
     "jotai": "^2.1.0",
-    "tailwind-merge": "^2.2.0"
+    "tailwind-merge": "^2.2.0",
+    "tailwind-scrollbar": "^3.0.5"
   },
   "peerDependencies": {
     "@osn/common": "^1.1.0",
@@ -128,7 +132,6 @@
     "storybook": "^7.6.6",
     "style-loader": "^3.3.3",
     "styled-components": "^6.1.6",
-    "tailwind-scrollbar": "^3.0.5",
     "tailwindcss": "^3.4.0",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
