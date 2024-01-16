@@ -140,7 +140,12 @@
     0px 4px 31px rgba(26, 33, 44, 0.04);
   --shadowCardHover: 0px 0.75px 8px rgba(26, 33, 44, 0.06),
     0px 4px 31px rgba(26, 33, 44, 0.08);
-  --shadowPopup: var(--shadowCardHover);
+  --shadowPopup: 0px 0.8px 8px 0px rgba(26, 33, 44, 0.06),
+    0px 4px 32px 0px rgba(26, 33, 44, 0.08);
+}
+.dark:root {
+  --shadowPopup: 0px 0.8px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 4px 32px 0px rgba(0, 0, 0, 0.2);
 }
 
 html {
