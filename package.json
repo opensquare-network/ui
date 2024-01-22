@@ -74,6 +74,7 @@
     "ethereum-blockies-base64": "^1.0.2",
     "ethers": "^5.6.9",
     "jotai": "^2.1.0",
+    "react-use": "^17.4.4",
     "tailwind-merge": "^2.2.0",
     "tailwind-scrollbar": "^3.0.5"
   },
