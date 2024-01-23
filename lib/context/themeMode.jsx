@@ -12,12 +12,12 @@ export default function ThemeModeProvider({ children, mode: defaultMode }) {
 
   return (
     <ThemeContext.Provider value={[mode, setMode]}>
-      <ThemeModeImpl>{children}</ThemeModeImpl>
+      <ThemeModeEffects>{children}</ThemeModeEffects>
     </ThemeContext.Provider>
   );
 }
 
-function ThemeModeImpl({ children }) {
+function ThemeModeEffects({ children }) {
   const isDark = useIsDark();
 
   useEffect(() => {
