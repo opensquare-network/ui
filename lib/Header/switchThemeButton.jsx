@@ -33,25 +33,41 @@ export default function HeaderSwitchThemeButton() {
     },
   ];
 
-  const currentIcon =
-    themeButtons.find((button) => button.value === mode)?.icon ||
-    themeButtons[0].icon;
+  const currentThemeButton =
+    themeButtons.find((button) => button.value === mode) || themeButtons[0];
 
   return (
     <Button
       ref={refs.setReference}
-      className="!px-2 !border-strokeActionDefault hover:!border-strokeActionActive"
+      className={cn(
+        "!px-2 !border-strokeActionDefault hover:!border-strokeActionActive",
+        "w-full",
+        "max-sm:!px-4",
+      )}
       onClick={() => {
         setVisible(true);
       }}
     >
-      <div className="[&_svg_path]:fill-textSecondary">{currentIcon}</div>
+      <span className="[&_svg_path]:fill-textSecondary text14Medium w-full inline-flex items-center justify-between gap-x-2">
+        <span className="flex items-center gap-x-2">
+          {currentThemeButton.icon}
+          <span className="sm:hidden">Theme</span>
+        </span>
+
+        <span className="capitalize text-textTertiary sm:hidden">
+          {currentThemeButton.value}
+        </span>
+      </span>
 
       {visible && (
         <div
           ref={refs.setFloating}
           style={floatingStyles}
-          className={cn("w-80", "py-2", "bg-fillBgPrimary shadow-shadowPopup")}
+          className={cn(
+            "w-80 max-w-full",
+            "py-2",
+            "bg-fillBgPrimary shadow-shadowPopup",
+          )}
         >
           {themeButtons.map((button) => (
             <div
