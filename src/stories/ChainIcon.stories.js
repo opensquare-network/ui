@@ -11,30 +11,30 @@ export const Available = () => {
   return (
     <Flex style={{ gap: 8, padding: 40 }}>
       <ChainIcon />
-      <ChainIcon chainName="default" showTooltip />
-      <ChainIcon chainName="kusama" showTooltip />
-      <ChainIcon chainName="statemine" showTooltip />
-      <ChainIcon chainName="polkadot" showTooltip />
-      <ChainIcon chainName="statemint" showTooltip />
-      <ChainIcon chainName="westend" showTooltip />
-      <ChainIcon chainName="westmint" showTooltip />
-      <ChainIcon chainName="karura" showTooltip />
-      <ChainIcon chainName="khala" showTooltip />
-      <ChainIcon chainName="moonriver" showTooltip />
-      <ChainIcon chainName="moonbeam" showTooltip />
-      <ChainIcon chainName="bifrost" showTooltip />
-      <ChainIcon chainName="kintsugi" showTooltip />
-      <ChainIcon chainName="polkadex" showTooltip />
-      <ChainIcon chainName="centrifuge" showTooltip />
-      <ChainIcon chainName="interlay" showTooltip />
-      <ChainIcon chainName="chrwna" showTooltip />
-      <ChainIcon chainName="acala" showTooltip />
-      <ChainIcon chainName="crust" showTooltip />
-      <ChainIcon chainName="ethereum" showTooltip />
-      <ChainIcon chainName="zeitgeist" showTooltip />
-      <ChainIcon chainName="shiden" showTooltip />
-      <ChainIcon chainName="altair" showTooltip />
-      <ChainIcon chainName="parallel" showTooltip />
+      <ChainIcon chainName="default" />
+      <ChainIcon chainName="kusama" />
+      <ChainIcon chainName="statemine" />
+      <ChainIcon chainName="polkadot" />
+      <ChainIcon chainName="statemint" />
+      <ChainIcon chainName="westend" />
+      <ChainIcon chainName="westmint" />
+      <ChainIcon chainName="karura" />
+      <ChainIcon chainName="khala" />
+      <ChainIcon chainName="moonriver" />
+      <ChainIcon chainName="moonbeam" />
+      <ChainIcon chainName="bifrost" />
+      <ChainIcon chainName="kintsugi" />
+      <ChainIcon chainName="polkadex" />
+      <ChainIcon chainName="centrifuge" />
+      <ChainIcon chainName="interlay" />
+      <ChainIcon chainName="chrwna" />
+      <ChainIcon chainName="acala" />
+      <ChainIcon chainName="crust" />
+      <ChainIcon chainName="ethereum" />
+      <ChainIcon chainName="zeitgeist" />
+      <ChainIcon chainName="shiden" />
+      <ChainIcon chainName="altair" />
+      <ChainIcon chainName="parallel" />
     </Flex>
   );
 };
