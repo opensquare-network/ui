@@ -185,3 +185,7 @@ body {
     }
   }
 }
+
+hr {
+  border-color: var(--strokeBorderDefault);
+}
