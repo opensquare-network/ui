@@ -8,18 +8,16 @@ export default {
 
 export const primary = () => <Header />;
 export const content = () => {
-  const Content = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-  `;
-
   return (
     <Header>
-      <Content>
-        <div>left content</div>
-        <div>right content</div>
-      </Content>
+      <div>content</div>
+    </Header>
+  );
+};
+export const prefix = () => {
+  return (
+    <Header prefix={<div>prefix</div>}>
+      <div>content</div>
     </Header>
   );
 };
@@ -33,4 +31,10 @@ export const logoRender = () => {
   };
 
   return <Header logoRender={logoRender} />;
+};
+
+export const links = () => {
+  return (
+    <Header links={[{ content: "New Space" }, { content: "Discussions" }]} />
+  );
 };
