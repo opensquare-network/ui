@@ -65,7 +65,7 @@
   ],
   "dependencies": {
     "@floating-ui/react": "^0.26.6",
-    "@osn/icons": "^1.58.0",
+    "@osn/icons": "^1.80.0",
     "@osn/polkadot-react-identicon": "^1.0.10",
     "@radix-ui/react-tooltip": "^1.0.7",
     "d3-selection": "^3.0.0",
