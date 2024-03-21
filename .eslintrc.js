@@ -1,10 +1,16 @@
 module.exports = {
+  root: true,
   env: {
     browser: true,
     node: true,
     es2021: true,
   },
-  extends: ["eslint:recommended", "plugin:react/recommended", "@osn"],
+  extends: [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "@osn",
+  ],
   overrides: [],
   parserOptions: {
     ecmaVersion: "latest",
