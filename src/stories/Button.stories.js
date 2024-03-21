@@ -32,17 +32,6 @@ export const Default = () => (
     <Button isLoading>isLoading</Button>
   </DemoWrapper>
 );
-export const orange = () => (
-  <DemoWrapper>
-    <Button color="orange">orange</Button>
-    <Button color="orange" disabled>
-      disabled
-    </Button>
-    <Button color="orange" isLoading>
-      isLoading
-    </Button>
-  </DemoWrapper>
-);
 export const block = () => (
   <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
     <Button primary block>
