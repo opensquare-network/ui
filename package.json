@@ -47,6 +47,7 @@
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
+    "lint": "eslint lib",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
     "prepublishOnly": "npm run test && npm run build"
