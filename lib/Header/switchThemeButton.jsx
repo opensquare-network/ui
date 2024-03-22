@@ -1,6 +1,6 @@
 import { SystemComputer, SystemMoon, SystemSun } from "@osn/icons/opensquare";
 import Button from "../styled/Button";
-import { useFloating, FloatingPortal } from "@floating-ui/react";
+import { useFloating } from "@floating-ui/react";
 import { useState } from "react";
 import { cn } from "../utils";
 import { useThemeMode } from "../hooks/theme";
@@ -20,15 +20,15 @@ export default function HeaderSwitchThemeButton() {
 
   const themeButtons = [
     {
-      icon: <SystemSun className="[&_path]:fill-textTertiary" />,
+      icon: <SystemSun />,
       value: "light",
     },
     {
-      icon: <SystemMoon className="[&_path]:fill-textTertiary" />,
+      icon: <SystemMoon />,
       value: "dark",
     },
     {
-      icon: <SystemComputer className="[&_path]:fill-textTertiary" />,
+      icon: <SystemComputer />,
       value: "system",
     },
   ];
@@ -48,7 +48,7 @@ export default function HeaderSwitchThemeButton() {
         setVisible(true);
       }}
     >
-      <span className="[&_svg_path]:fill-textSecondary text14Medium w-full inline-flex items-center justify-between gap-x-2">
+      <span className="text-textSecondary text14Medium w-full inline-flex items-center justify-between gap-x-2">
         <span className="flex items-center gap-x-2">
           {currentThemeButton.icon}
           <span className="sm:hidden">Theme</span>
@@ -60,38 +60,36 @@ export default function HeaderSwitchThemeButton() {
       </span>
 
       {visible && (
-        <FloatingPortal>
-          <div
-            ref={refs.setFloating}
-            style={floatingStyles}
-            className={cn(
-              "w-80 max-w-full",
-              "py-2",
-              "bg-fillBgPrimary shadow-shadowPopup",
-            )}
-          >
-            {themeButtons.map((button) => (
-              <div
-                role="button"
-                key={button.value}
-                className={cn(
-                  "flex items-center py-2 px-4",
-                  "text14Medium",
-                  "hover:bg-fillBgTertiary",
-                  mode === button.value && "bg-fillBgTertiary",
-                )}
-                onClick={(event) => {
-                  event.stopPropagation();
-                  setMode(button.value);
-                  setVisible(false);
-                }}
-              >
-                {button.icon}
-                <span className="capitalize ml-2">{button.value}</span>
-              </div>
-            ))}
-          </div>
-        </FloatingPortal>
+        <div
+          ref={refs.setFloating}
+          style={floatingStyles}
+          className={cn(
+            "w-80 max-w-full",
+            "py-2",
+            "bg-fillBgPrimary shadow-shadowPopup",
+          )}
+        >
+          {themeButtons.map((button) => (
+            <div
+              role="button"
+              key={button.value}
+              className={cn(
+                "flex items-center py-2 px-4",
+                "text14Medium",
+                "hover:bg-fillBgTertiary",
+                mode === button.value && "bg-fillBgTertiary",
+              )}
+              onClick={(event) => {
+                event.stopPropagation();
+                setMode(button.value);
+                setVisible(false);
+              }}
+            >
+              <span className="text-textTertiary">{button.icon}</span>
+              <span className="capitalize ml-2">{button.value}</span>
+            </div>
+          ))}
+        </div>
       )}
     </Button>
   );
