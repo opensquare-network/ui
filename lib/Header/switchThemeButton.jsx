@@ -39,11 +39,7 @@ export default function HeaderSwitchThemeButton() {
   return (
     <Button
       ref={refs.setReference}
-      className={cn(
-        "!px-2 !border-strokeActionDefault hover:!border-strokeActionActive",
-        "w-full",
-        "max-sm:!px-4",
-      )}
+      className={cn("!px-2", "w-full", "max-sm:!px-4")}
       onClick={() => {
         setVisible(true);
       }}
