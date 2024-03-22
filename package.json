@@ -24,6 +24,9 @@
       "import": "./dist/esm/*",
       "require": "./dist/*"
     },
+    "./lib": {
+      "import": "./lib/index.js"
+    },
     "./lib/*": {
       "import": "./lib/*"
     },
