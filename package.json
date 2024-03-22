@@ -50,7 +50,8 @@
     "lint": "eslint lib",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build",
+    "prepare": "husky"
   },
   "author": "OpenSquare <https://www.opensquare.network/>",
   "license": "Apache-2.0",
@@ -127,6 +128,8 @@
     "eslint-plugin-react": "^7.33.2",
     "eslint-plugin-unused-imports": "^3.1.0",
     "file-loader": "^6.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "postcss": "^8.4.32",
     "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
@@ -142,6 +145,12 @@
     "tsup": "^8.0.1",
     "typescript": "^5.3.3",
     "vitest": "^0.19.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "packageManager": "yarn@3.5.1"
 }
