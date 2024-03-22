@@ -1,6 +1,6 @@
 import { SystemComputer, SystemMoon, SystemSun } from "@osn/icons/opensquare";
 import Button from "../styled/Button";
-import { useFloating } from "@floating-ui/react";
+import { useFloating, FloatingPortal } from "@floating-ui/react";
 import { useState } from "react";
 import { cn } from "../utils";
 import { useThemeMode } from "../hooks/theme";
@@ -60,36 +60,38 @@ export default function HeaderSwitchThemeButton() {
       </span>
 
       {visible && (
-        <div
-          ref={refs.setFloating}
-          style={floatingStyles}
-          className={cn(
-            "w-80 max-w-full",
-            "py-2",
-            "bg-fillBgPrimary shadow-shadowPopup",
-          )}
-        >
-          {themeButtons.map((button) => (
-            <div
-              role="button"
-              key={button.value}
-              className={cn(
-                "flex items-center py-2 px-4",
-                "text14Medium",
-                "hover:bg-fillBgTertiary",
-                mode === button.value && "bg-fillBgTertiary",
-              )}
-              onClick={(event) => {
-                event.stopPropagation();
-                setMode(button.value);
-                setVisible(false);
-              }}
-            >
-              {button.icon}
-              <span className="capitalize ml-2">{button.value}</span>
-            </div>
-          ))}
-        </div>
+        <FloatingPortal>
+          <div
+            ref={refs.setFloating}
+            style={floatingStyles}
+            className={cn(
+              "w-80 max-w-full",
+              "py-2",
+              "bg-fillBgPrimary shadow-shadowPopup",
+            )}
+          >
+            {themeButtons.map((button) => (
+              <div
+                role="button"
+                key={button.value}
+                className={cn(
+                  "flex items-center py-2 px-4",
+                  "text14Medium",
+                  "hover:bg-fillBgTertiary",
+                  mode === button.value && "bg-fillBgTertiary",
+                )}
+                onClick={(event) => {
+                  event.stopPropagation();
+                  setMode(button.value);
+                  setVisible(false);
+                }}
+              >
+                {button.icon}
+                <span className="capitalize ml-2">{button.value}</span>
+              </div>
+            ))}
+          </div>
+        </FloatingPortal>
       )}
     </Button>
   );
