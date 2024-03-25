@@ -1,5 +1,6 @@
 import Header from "../../lib/Header";
 import styled from "styled-components";
+import Button from "../../lib/styled/Button";
 
 export default {
   title: "Header",
@@ -36,5 +37,18 @@ export const logoRender = () => {
 export const links = () => {
   return (
     <Header links={[{ content: "New Space" }, { content: "Discussions" }]} />
+  );
+};
+
+export const connectButton = () => {
+  return (
+    <Header
+      links={[{ content: "New Space" }, { content: "Discussions" }]}
+      connectButton={
+        <div>
+          <Button primary>Connect Button</Button>
+        </div>
+      }
+    />
   );
 };
