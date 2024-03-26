@@ -4863,6 +4863,7 @@ __metadata:
     react-dom: ^18.2.0
     react-router-dom: ^6.21.1
     react-use: ^17.4.4
+    redaxios: ^0.5.1
     semantic-ui-css: ^2.5.0
     semantic-ui-react: ^2.1.4
     storybook: ^7.6.6
@@ -16558,6 +16559,13 @@ __metadata:
     source-map: ~0.6.1
     tslib: ^2.0.1
   checksum: edb63bbe0457e68c0f4892f55413000e92aa7c5c53f9e109ab975d1c801cd299a62511ea72734435791f4aea6f0edf560f6a275761f66b2b6069ff6d72686029
+  languageName: node
+  linkType: hard
+
+"redaxios@npm:^0.5.1":
+  version: 0.5.1
+  resolution: "redaxios@npm:0.5.1"
+  checksum: 0ccd38610d2d0769fb72205151ee90aa2a929be66c6056b3eba0784e32e76618d5a9314bbb0d35d5d3a6197a032a411532437ade5bf0f350abbc1b631b1d0d17
   languageName: node
   linkType: hard
 
