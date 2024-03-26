@@ -15,4 +15,8 @@ export default defineConfig({
     ".woff2": "copy",
   },
   external: ["semantic-ui-css", "semantic-ui-react"],
+  esbuildOptions(options) {
+    options.jsx = "automatic";
+    return options;
+  },
 });

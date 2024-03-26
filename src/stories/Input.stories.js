@@ -2,7 +2,7 @@ import Input from "../../lib/Input";
 import styled from "styled-components";
 import Button from "../../lib/styled/Button";
 import { useState } from "react";
-import { LoadingIcon } from "../../lib/Icon";
+import { SystemLoading1 } from "@osn/icons/opensquare";
 
 export default {
   title: "Input",
@@ -25,7 +25,7 @@ export const suffixLoading = () => {
 
   return (
     <DemoWrapper>
-      <Input suffix={loading && <LoadingIcon />} />
+      <Input suffix={loading && <SystemLoading1 />} />
 
       <Button onClick={() => setLoading(!loading)}>Toggle Loading</Button>
     </DemoWrapper>

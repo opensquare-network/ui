@@ -32,17 +32,6 @@ export const Default = () => (
     <Button isLoading>isLoading</Button>
   </DemoWrapper>
 );
-export const orange = () => (
-  <DemoWrapper>
-    <Button color="orange">orange</Button>
-    <Button color="orange" disabled>
-      disabled
-    </Button>
-    <Button color="orange" isLoading>
-      isLoading
-    </Button>
-  </DemoWrapper>
-);
 export const block = () => (
   <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
     <Button primary block>
@@ -59,9 +48,7 @@ export const onClick = () => {
 
   return (
     <DemoWrapper>
-      <Button primary onClick={greeting}>
-        greeting
-      </Button>
+      <Button onClick={greeting}>greeting</Button>
       <Button disabled onClick={greeting}>
         won't work
       </Button>

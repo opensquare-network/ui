@@ -1,6 +1,6 @@
-export type DividerProps = {
+export type DividerProps = React.HTMLAttributes<HTMLHRElement> & {
   /**
-   * @deprecated use `mx` instead
+   * @deprecated use `my` instead
    */
   gap?: number;
 

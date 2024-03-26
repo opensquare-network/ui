@@ -77,15 +77,10 @@ export const hoverIdentityName = () => {
         <IdentityUser
           network={maintenance.network}
           address={maintenance.address}
-          hoverAddressForDetail
         />
       </EllipsisWrapper>
       <br />
-      <IdentityUser
-        network={osn.network}
-        address={osn.address}
-        hoverAddressForDetail
-      />
+      <IdentityUser network={osn.network} address={osn.address} />
     </HoverWrapper>
   );
 };
@@ -98,7 +93,6 @@ export const linkIdentityUser = () => {
           explore
           network={maintenance.network}
           address={maintenance.address}
-          hoverAddressForDetail
         />
       </EllipsisWrapper>
       <EllipsisWrapper>
@@ -106,16 +100,10 @@ export const linkIdentityUser = () => {
           explore
           network={folk.network}
           address={folk.address}
-          hoverAddressForDetail
         />
       </EllipsisWrapper>
       <EllipsisWrapper>
-        <LinkIdentityUser
-          explore
-          network={osn.network}
-          address={osn.address}
-          hoverAddressForDetail
-        />
+        <LinkIdentityUser explore network={osn.network} address={osn.address} />
       </EllipsisWrapper>
     </HoverWrapper>
   );

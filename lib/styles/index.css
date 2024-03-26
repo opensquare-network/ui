@@ -1,0 +1,191 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* base */
+:root {
+  --neutralGray0: rgba(255, 255, 255, 1);
+  --neutralGray25: rgba(252, 252, 253, 1);
+  --neutralGray50: rgba(249, 250, 251, 1);
+  --neutralGray100: rgba(242, 244, 247, 1);
+  --neutralGray200: rgba(234, 236, 240, 1);
+  --neutralGray300: rgba(208, 213, 221, 1);
+  --neutralGray400: rgba(152, 162, 179, 1);
+  --neutralGray500: rgba(102, 112, 133, 1);
+  --neutralGray600: rgba(71, 84, 103, 1);
+  --neutralGray700: rgba(52, 64, 84, 1);
+  --neutralGray800: rgba(23, 34, 51, 1);
+  --neutralGray900: rgba(16, 24, 40, 1);
+  --neutralGray950: rgba(13, 19, 33, 1);
+  --neutralGray1000: rgba(0, 0, 0, 1);
+  --brandPurple25a: rgba(108, 79, 242, 0.1);
+  --brandPurple50a: rgba(108, 79, 242, 0.2);
+  --brandPurple100a: rgba(108, 79, 242, 0.32);
+  --brandPurple200a: rgba(108, 79, 242, 0.46);
+  --brandPurple300a: rgba(108, 79, 242, 0.62);
+  --brandPurple400a: rgba(108, 79, 242, 0.8);
+  --brandPurple500a: rgba(108, 79, 242, 1);
+  --brandTurquoise25a: rgba(0, 200, 187, 0.1);
+  --brandTurquoise50a: rgba(0, 200, 187, 0.2);
+  --brandTurquoise100a: rgba(0, 200, 187, 0.32);
+  --brandTurquoise200a: rgba(0, 200, 187, 0.46);
+  --brandTurquoise300a: rgba(0, 200, 187, 0.62);
+  --brandTurquoise400a: rgba(0, 200, 187, 0.8);
+  --brandTurquoise500a: rgba(0, 200, 187, 1);
+  --accentGreen25a: rgba(76, 175, 80, 0.1);
+  --accentGreen50a: rgba(76, 175, 80, 0.2);
+  --accentGreen100a: rgba(76, 175, 80, 0.32);
+  --accentGreen200a: rgba(76, 175, 80, 0.46);
+  --accentGreen300a: rgba(76, 175, 80, 0.62);
+  --accentGreen400a: rgba(76, 175, 80, 0.8);
+  --accentGreen500a: rgba(76, 175, 80, 1);
+  --accentYellow25a: rgba(226, 157, 22, 0.1);
+  --accentYellow50a: rgba(226, 157, 22, 0.2);
+  --accentYellow100a: rgba(226, 157, 22, 0.32);
+  --accentYellow200a: rgba(226, 157, 22, 0.46);
+  --accentYellow300a: rgba(226, 157, 22, 0.62);
+  --accentYellow400a: rgba(226, 157, 22, 0.8);
+  --accentYellow500a: rgba(226, 157, 22, 1);
+  --accentRed25a: rgba(211, 61, 70, 0.1);
+  --accentRed50a: rgba(211, 61, 70, 0.2);
+  --accentRed100a: rgba(211, 61, 70, 0.32);
+  --accentRed200a: rgba(211, 61, 70, 0.46);
+  --accentRed300a: rgba(211, 61, 70, 0.62);
+  --accentRed400a: rgba(211, 61, 70, 0.8);
+  --accentRed500a: rgba(211, 61, 70, 1);
+  --accentBlue25a: rgba(33, 114, 201, 0.1);
+  --accentBlue50a: rgba(33, 114, 201, 0.2);
+  --accentBlue100a: rgba(33, 114, 201, 0.32);
+  --accentBlue200a: rgba(33, 114, 201, 0.46);
+  --accentBlue300a: rgba(33, 114, 201, 0.62);
+  --accentBlue400a: rgba(33, 114, 201, 0.8);
+  --accentBlue500a: rgba(33, 114, 201, 1);
+}
+
+/* tokens */
+:root {
+  --textPrimary: var(--neutralGray900);
+  --textSecondary: var(--neutralGray600);
+  --textTertiary: var(--neutralGray400);
+  --textQuaternary: var(--neutralGray300);
+  --textPrimaryContrast: var(--neutralGray0);
+  --textSecondaryContrast: var(--neutralGray400);
+  --textTertiaryContrast: var(--neutralGray600);
+  --textQuaternaryContrast: var(--neutralGray700);
+  --textBrandPrimary: var(--brandPurple500a);
+  --textBrandSecondary: var(--brandTurquoise500a);
+  --textLink: var(--accentBlue500a);
+  --textFeedbackSuccess: var(--accentGreen500a);
+  --textFeedbackWarning: var(--accentYellow500a);
+  --fillBgFeedbackWarningBack: var(--accentYellow25a);
+  --textFeedbackError: var(--accentRed500a);
+  --fillBgPrimary: var(--neutralGray0);
+  --fillBgSecondary: var(--neutralGray25);
+  --fillBgTertiary: var(--neutralGray100);
+  --fillBgQuaternary: var(--neutralGray200);
+  --fillBgPrimaryContrast: var(--neutralGray950);
+  --fillBgBrandPrimary: var(--brandPurple500a);
+  --fillBgBrandSecondary: var(--brandTurquoise500a);
+  --fillBgBrandSecondaryBack: var(--brandTurquoise25a);
+  --fillBgBrandDisable: var(--neutralGray300);
+  --fillBgFeedbackError: var(--accentRed25a);
+  --fillBgInputDefault: var(--neutralGray25);
+  --fillBgInputDisable: var(--neutralGray25);
+  --fillBgLinkBack: var(--accentBlue25a);
+  --strokeBorderDefault: var(--neutralGray100);
+  --strokeActionDefault: var(--neutralGray300);
+  --strokeActionActive: var(--neutralGray400);
+  --strokeActionDisable: var(--neutralGray200);
+  --strokeBgBrandSecondary: var(--brandTurquoise500a);
+}
+.dark:root {
+  --textPrimary: var(--neutralGray200);
+  --textSecondary: var(--neutralGray400);
+  --textTertiary: var(--neutralGray600);
+  --textQuaternary: var(--neutralGray700);
+  --textPrimaryContrast: var(--neutralGray100);
+  --textSecondaryContrast: var(--neutralGray400);
+  --textTertiaryContrast: var(--neutralGray600);
+  --textQuaternaryContrast: var(--neutralGray700);
+  --textBrandPrimary: var(--brandPurple500a);
+  --textBrandSecondary: var(--brandTurquoise500a);
+  --textLink: var(--accentBlue500a);
+  --textFeedbackSuccess: var(--accentGreen500a);
+  --textFeedbackWarning: var(--accentYellow500a);
+  --fillBgFeedbackWarningBack: var(--accentYellow25a);
+  --textFeedbackError: var(--accentRed500a);
+  --fillBgPrimary: var(--neutralGray900);
+  --fillBgSecondary: var(--neutralGray950);
+  --fillBgTertiary: var(--neutralGray800);
+  --fillBgQuaternary: var(--neutralGray700);
+  --fillBgPrimaryContrast: var(--neutralGray950);
+  --fillBgBrandPrimary: var(--brandPurple500a);
+  --fillBgBrandSecondary: var(--brandTurquoise500a);
+  --fillBgBrandSecondaryBack: var(--brandTurquoise25a);
+  --fillBgBrandDisable: var(--neutralGray600);
+  --fillBgFeedbackError: var(--accentRed25a);
+  --fillBgInputDefault: var(--neutralGray950);
+  --fillBgInputDisable: var(--neutralGray900);
+  --fillBgLinkBack: var(--accentBlue25a);
+  --strokeBorderDefault: var(--neutralGray800);
+  --strokeActionDefault: var(--neutralGray700);
+  --strokeActionActive: var(--neutralGray400);
+  --strokeActionDisable: var(--neutralGray800);
+  --strokeBgBrandSecondary: var(--brandTurquoise500a);
+}
+
+/* effects */
+:root {
+  --shadowCardDefault: 0px 0.75px 4px rgba(26, 33, 44, 0.03),
+    0px 4px 31px rgba(26, 33, 44, 0.04);
+  --shadowCardHover: 0px 0.75px 8px rgba(26, 33, 44, 0.06),
+    0px 4px 31px rgba(26, 33, 44, 0.08);
+  --shadowPopup: 0px 0.8px 8px 0px rgba(26, 33, 44, 0.06),
+    0px 4px 32px 0px rgba(26, 33, 44, 0.08);
+}
+.dark:root {
+  --shadowPopup: 0px 0.8px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 4px 32px 0px rgba(0, 0, 0, 0.2);
+}
+
+html {
+  /* override semantic ui */
+  font-size: unset;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--textPrimary);
+  background-color: var(--fillBgSecondary);
+}
+
+.rich-editor {
+  .markdown-body {
+    color: var(--textPrimary);
+
+    th {
+      background-color: var(--fillBgTertiary) !important;
+    }
+    tbody tr:nth-child(even) {
+      background-color: var(--fillBgPrimary) !important;
+    }
+    hr {
+      background-color: var(--strokeBorderDefault) !important;
+    }
+    th,
+    td {
+      color: inherit !important;
+      border: 1px solid var(--strokeBorderDefault) !important;
+    }
+    pre,
+    code {
+      color: inherit !important;
+      background-color: var(--fillBgTertiary) !important;
+    }
+  }
+}
+
+hr {
+  border-color: var(--strokeBorderDefault);
+}

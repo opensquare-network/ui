@@ -24,6 +24,12 @@
       "import": "./dist/esm/*",
       "require": "./dist/*"
     },
+    "./lib": {
+      "import": "./lib/index.js"
+    },
+    "./lib/*": {
+      "import": "./lib/*"
+    },
     "./RichEditor": {
       "import": "./dist/esm/RichEditor",
       "require": "./dist/RichEditor"
@@ -35,14 +41,20 @@
     "./reset.css": {
       "import": "./dist/esm/styles/reset.css",
       "require": "./dist/styles/reset.css"
+    },
+    "./tailwind/*": {
+      "import": "./tailwind/*",
+      "require": "./tailwind/*"
     }
   },
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
+    "lint": "eslint lib",
     "storybook": "storybook dev -p 6006 --no-open",
     "build-storybook": "storybook build",
-    "prepublishOnly": "npm run test && npm run build"
+    "prepublishOnly": "npm run test && npm run build",
+    "prepare": "husky"
   },
   "author": "OpenSquare <https://www.opensquare.network/>",
   "license": "Apache-2.0",
@@ -53,18 +65,23 @@
     }
   ],
   "files": [
-    "dist"
+    "dist",
+    "tailwind"
   ],
   "dependencies": {
+    "@floating-ui/react": "^0.26.6",
+    "@osn/icons": "^1.83.0",
     "@osn/polkadot-react-identicon": "^1.0.10",
-    "@popperjs/core": "^2.11.6",
-    "copy-to-clipboard": "^3.3.1",
+    "@radix-ui/react-tooltip": "^1.0.7",
     "d3-selection": "^3.0.0",
     "d3-shape": "^3.1.0",
     "dayjs": "^1.10.8",
     "ethereum-blockies-base64": "^1.0.2",
     "ethers": "^5.6.9",
-    "jotai": "^2.1.0"
+    "jotai": "^2.1.0",
+    "react-use": "^17.4.4",
+    "tailwind-merge": "^2.2.0",
+    "tailwind-scrollbar": "^3.0.5"
   },
   "peerDependencies": {
     "@osn/common": "^1.1.0",
@@ -78,15 +95,16 @@
     "react-dom": "^18.2.0",
     "semantic-ui-css": "^2.4.1",
     "semantic-ui-react": "^2.1.3",
-    "styled-components": "^5.3.1"
+    "styled-components": "^6.1.6"
   },
   "devDependencies": {
     "@2nthony/prettier-config": "^1.0.1",
     "@babel/preset-env": "^7.21.5",
     "@osn/common": "^1.3.7",
     "@osn/constants": "^1.1.2",
-    "@osn/previewer": "^0.12.4",
-    "@osn/rich-text-editor": "^0.1.59",
+    "@osn/eslint-config": "^1.0.2",
+    "@osn/previewer": "^0.12.8",
+    "@osn/rich-text-editor": "^0.6.6",
     "@polkadot/api": "^9.0.1",
     "@polkadot/extension-dapp": "^0.44.2",
     "@polkadot/util-crypto": "^10.1.1",
@@ -94,6 +112,8 @@
     "@storybook/addon-essentials": "^7.0.11",
     "@storybook/addon-interactions": "^7.0.11",
     "@storybook/addon-links": "^7.0.11",
+    "@storybook/addon-styling-webpack": "^0.0.5",
+    "@storybook/addon-themes": "^7.6.6",
     "@storybook/react": "^7.0.11",
     "@storybook/react-webpack5": "^7.0.11",
     "@storybook/testing-library": "^0.1.0",
@@ -102,20 +122,38 @@
     "@types/d3-shape": "^3.1.0",
     "@types/react": "^18.2.6",
     "@types/react-dom": "^18.2.4",
+    "@typescript-eslint/eslint-plugin": "^7.3.1",
+    "@typescript-eslint/parser": "^7.3.1",
+    "autoprefixer": "^10.4.16",
     "bignumber.js": "^9.0.2",
+    "css-loader": "^6.8.1",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-unused-imports": "^3.1.0",
     "file-loader": "^6.2.0",
-    "postcss": "^8.4.14",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "postcss": "^8.4.32",
+    "postcss-loader": "^7.3.3",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.3.0",
+    "react-router-dom": "^6.21.1",
     "semantic-ui-css": "^2.5.0",
     "semantic-ui-react": "^2.1.4",
-    "storybook": "^7.0.11",
-    "styled-components": "^6.0.0-rc.1",
-    "tsup": "^6.2.0",
-    "typescript": "^4.7.4",
+    "storybook": "^7.6.6",
+    "style-loader": "^3.3.3",
+    "styled-components": "^6.1.6",
+    "tailwindcss": "^3.4.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
     "vitest": "^0.19.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ]
   },
   "packageManager": "yarn@3.5.1"
 }

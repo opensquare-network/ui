@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-npm i @osn/common-ui
+npm i @osn/common-ui semantic-ui-css semantic-ui-react
 ```
 
 ## License

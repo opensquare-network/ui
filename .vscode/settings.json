@@ -1,0 +1,19 @@
+{
+  "tailwindCSS.experimental.classRegex": [
+    "className\\:\\s*['\"]([^']*)['\"]",
+    "className\\:\"([^\"]*)",
+    "tw`([^`]*)",
+    "tw=\"([^\"]*)",
+    "tw={\"([^\"}]*)",
+    "tw\\.\\w+`([^`]*)",
+    "tw\\(.*?\\)`([^`]*)",
+    "cn\\(.*?\\)`([^`]*)"
+  ],
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+}

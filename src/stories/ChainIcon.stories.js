@@ -11,30 +11,30 @@ export const Available = () => {
   return (
     <Flex style={{ gap: 8, padding: 40 }}>
       <ChainIcon />
-      <ChainIcon chainName="default" showTooltip />
-      <ChainIcon chainName="kusama" showTooltip />
-      <ChainIcon chainName="statemine" showTooltip />
-      <ChainIcon chainName="polkadot" showTooltip />
-      <ChainIcon chainName="statemint" showTooltip />
-      <ChainIcon chainName="westend" showTooltip />
-      <ChainIcon chainName="westmint" showTooltip />
-      <ChainIcon chainName="karura" showTooltip />
-      <ChainIcon chainName="khala" showTooltip />
-      <ChainIcon chainName="moonriver" showTooltip />
-      <ChainIcon chainName="moonbeam" showTooltip />
-      <ChainIcon chainName="bifrost" showTooltip />
-      <ChainIcon chainName="kintsugi" showTooltip />
-      <ChainIcon chainName="polkadex" showTooltip />
-      <ChainIcon chainName="centrifuge" showTooltip />
-      <ChainIcon chainName="interlay" showTooltip />
-      <ChainIcon chainName="chrwna" showTooltip />
-      <ChainIcon chainName="acala" showTooltip />
-      <ChainIcon chainName="crust" showTooltip />
-      <ChainIcon chainName="ethereum" showTooltip />
-      <ChainIcon chainName="zeitgeist" showTooltip />
-      <ChainIcon chainName="shiden" showTooltip />
-      <ChainIcon chainName="altair" showTooltip />
-      <ChainIcon chainName="parallel" showTooltip />
+      <ChainIcon showTooltip chainName="default" />
+      <ChainIcon showTooltip chainName="kusama" />
+      <ChainIcon showTooltip chainName="statemine" />
+      <ChainIcon showTooltip chainName="polkadot" />
+      <ChainIcon showTooltip chainName="statemint" />
+      <ChainIcon showTooltip chainName="westend" />
+      <ChainIcon showTooltip chainName="westmint" />
+      <ChainIcon showTooltip chainName="karura" />
+      <ChainIcon showTooltip chainName="khala" />
+      <ChainIcon showTooltip chainName="moonriver" />
+      <ChainIcon showTooltip chainName="moonbeam" />
+      <ChainIcon showTooltip chainName="bifrost" />
+      <ChainIcon showTooltip chainName="kintsugi" />
+      <ChainIcon showTooltip chainName="polkadex" />
+      <ChainIcon showTooltip chainName="centrifuge" />
+      <ChainIcon showTooltip chainName="interlay" />
+      <ChainIcon showTooltip chainName="chrwna" />
+      <ChainIcon showTooltip chainName="acala" />
+      <ChainIcon showTooltip chainName="crust" />
+      <ChainIcon showTooltip chainName="ethereum" />
+      <ChainIcon showTooltip chainName="zeitgeist" />
+      <ChainIcon showTooltip chainName="shiden" />
+      <ChainIcon showTooltip chainName="altair" />
+      <ChainIcon showTooltip chainName="parallel" />
     </Flex>
   );
 };
