@@ -1,4 +1,3 @@
-import "semantic-ui-css/semantic.min.css";
 import "../lib/styles/index.css";
 import "../lib/styles/reset.css";
 import { withThemeByClassName } from "@storybook/addon-themes";
