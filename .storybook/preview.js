@@ -22,11 +22,8 @@ export const decorators = [
     },
     defaultTheme: "light",
   }),
-  (Story) => {
-    return (
-      <ConfigProvider themeMode="system">
-        <Story />
-      </ConfigProvider>
-    );
+  // https://github.com/storybookjs/testing-react/issues/30#issuecomment-1542479018
+  (story) => {
+    return <ConfigProvider themeMode="system">{story()}</ConfigProvider>;
   },
 ];
