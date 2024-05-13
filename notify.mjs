@@ -25,7 +25,7 @@ function main() {
     const data = {
       msg_type: "text",
       content: {
-        text: `@osn/icons@${pkg.version}\n\n${msg}`,
+        text: `@osn/common-ui@${pkg.version}\n\n${msg}`,
       },
     };
     axios.post(url, data);
