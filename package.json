@@ -70,7 +70,7 @@
   ],
   "dependencies": {
     "@floating-ui/react": "^0.26.6",
-    "@osn/icons": "^1.132.0",
+    "@osn/icons": "^1.138.0",
     "@osn/polkadot-react-identicon": "^1.0.10",
     "@radix-ui/react-dialog": "^1.0.5",
     "@radix-ui/react-tooltip": "^1.0.7",
