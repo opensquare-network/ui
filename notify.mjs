@@ -1,7 +1,9 @@
 import { execSync } from "node:child_process";
 import axios from "redaxios";
 import process from "node:process";
-import pkg from "./package.json" assert { type: "json" };
+import { readFileSync } from "fs";
+
+const pkg = JSON.parse(readFileSync("./package.json", "utf-8"));
 
 const url = process.env.WEBHOOK_URL;
 
