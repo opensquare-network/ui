@@ -85,7 +85,7 @@
     "tailwind-scrollbar": "^3.0.5"
   },
   "peerDependencies": {
-    "@osn/common": "^2.0.0",
+    "@osn/common": "^2.0.1",
     "@osn/constants": "^1.1.2",
     "@osn/previewer": "^0.11.2",
     "@osn/rich-text-editor": "^0.1.52",
@@ -101,7 +101,7 @@
   "devDependencies": {
     "@2nthony/prettier-config": "^1.0.1",
     "@babel/preset-env": "^7.21.5",
-    "@osn/common": "^2.0.0",
+    "@osn/common": "^2.0.1",
     "@osn/constants": "^1.1.2",
     "@osn/eslint-config": "^1.0.2",
     "@osn/previewer": "^0.12.8",
