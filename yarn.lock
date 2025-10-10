@@ -4760,7 +4760,7 @@ __metadata:
     "@2nthony/prettier-config": ^1.0.1
     "@babel/preset-env": ^7.21.5
     "@floating-ui/react": ^0.26.6
-    "@osn/common": ^2.0.0
+    "@osn/common": ^2.0.1
     "@osn/constants": ^1.1.2
     "@osn/eslint-config": ^1.0.2
     "@osn/icons": ^1.228.0
@@ -4823,7 +4823,7 @@ __metadata:
     typescript: ^5.3.3
     vitest: ^0.19.1
   peerDependencies:
-    "@osn/common": ^2.0.0
+    "@osn/common": ^2.0.1
     "@osn/constants": ^1.1.2
     "@osn/previewer": ^0.11.2
     "@osn/rich-text-editor": ^0.1.52
@@ -4838,9 +4838,9 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@osn/common@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "@osn/common@npm:2.0.0"
+"@osn/common@npm:^2.0.1":
+  version: 2.0.1
+  resolution: "@osn/common@npm:2.0.1"
   dependencies:
     "@osn/provider-options": ^1.0.2
     bignumber.js: ^9.1.0
@@ -4853,7 +4853,7 @@ __metadata:
     "@polkadot/util-crypto": "*"
     react: ^18.2.0
     react-dom: ^18.2.0
-  checksum: e1e1f2626e77c1435e1e8d25ed87be2fb30f491ba9bc1fcda67ebcfa93f5f3291ce1360d87b99330d19db7221a395ae570aca0ee852d4a8e5f9472ea921070c9
+  checksum: d12188d06ce9a940b331122034492fecb14980890b269e0f527971124a9207eab4ab3cce37062c67ac585dea1514b5ae8cac2d68cf4d9054e77ec36bb11a3882
   languageName: node
   linkType: hard
 
